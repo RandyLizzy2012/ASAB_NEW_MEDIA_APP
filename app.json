@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "sora",
+    "slug": "sora",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.sora",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera for video calls and recording videos",
+        "NSMicrophoneUsageDescription": "This app needs access to microphone for audio calls and video recording",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to select and upload videos",
+        "NSLocalNetworkUsageDescription": "This app needs access to local network for real-time communication",
+        "UIStatusBarStyle": "UIStatusBarStyleLightContent",
+        "UIViewControllerBasedStatusBarAppearance": false,
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET"
+      ],
+      "package": "com.anonymous.sora",
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "com.jsm.asabcorp",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-video",
+      "expo-web-browser",
+      "expo-camera"
+    ]
+  }
+}
